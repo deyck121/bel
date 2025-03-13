@@ -54,16 +54,46 @@
             margin-top: 20px;
             width: 150px;
         }
+        #mensaje {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Perdón mi Niña</h1>
         <p>Te hice esto con todo mi corazón 💖</p>
-        <a href="si.html" class="button">Sí</a>
-        <a href="no.html" class="button">No</a>
+        <button class="button" onclick="mostrarMensaje()">Ábrelo</button>
         <div class="flowers">🌷🌹🌷🌹🌷</div>
         <img src="https://i.pinimg.com/originals/3a/72/86/3a7286be27b8ec57bbdc3163539cb8c4.png" alt="Snoopy Love" class="snoopy">
+        <img src="https://i.pinimg.com/originals/2f/d2/a4/2fd2a485759b42344710a10df7454a8e.png" alt="Snoopy Hug" class="snoopy">
     </div>
+
+    <div id="mensaje">
+        <h3>Te dedico esto mi Belencita</h3>
+        <p>Me esforcé por hacerte algo bonito, no es mucho pero es con el corazón.</p>
+        <p>"No sé mucho de poesía, de hecho, casi nada, pero en ti, Belencita, 
+        en ti descubrí el verso más bello que jamás escribí. 
+        Eres la rima perfecta de mi corazón, 
+        la melodía suave de mi inspiración. 
+        Y aunque no tenga mucho, mi amor es sincero 
+        con cada latido, cada gesto, cada beso ligero. 
+        Y no tengo mucho, solo un corazón que siempre te será entregado."</p>
+        <div class="flowers">🌷🌹🌷🌹🌷</div>
+        <img src="https://i.pinimg.com/originals/70/17/35/7017354be5ea4633b16201aa0f79a14d.png" alt="Snoopy Happy" class="snoopy">
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
+
